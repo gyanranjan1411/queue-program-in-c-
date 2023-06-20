@@ -1,0 +1,47 @@
+#include<conio.h>
+#include<stdio.h>
+int maxsize =5;
+int queue[5];
+int front=0;
+int rear=-1;
+int nocount=0;
+int empty()//check queue is empty and full
+{
+	if(rear==0)
+	{
+		return 1;//return yes when queue is empty
+	}
+	else
+	{
+		return 0;//return no when queue have h data 
+	}
+}
+int full()
+{
+	if(nocount==maxsize)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+int insert(int data)
+{
+	if(full())
+	{
+		
+	}
+	else
+   {
+   	rear=rear+1;//rear in increment
+   	queue[rear]=data;//data insert in array
+   	nocount=nocount+1;//no of count is increse
+   }
+}
+int main()
+{
+int data;
+insert(5);	
+}
